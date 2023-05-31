@@ -23,19 +23,19 @@ public class NettyHello {
                 .childHandler(
                         // channel代表和客户端进行数据读写的通道 initializer初始化，负责添加别的handler
                         new ChannelInitializer<NioSocketChannel>() {
-                    @Override
-                    protected void initChannel(NioSocketChannel nioSocketChannel) throws Exception {
-                        // 添加具体的handler
-                        nioSocketChannel.pipeline().addLast(new StringDecoder()); //将bytebuf转换成字符串
-                        nioSocketChannel.pipeline().addLast(new ChannelInboundHandlerAdapter(){
-                            // 读事件
                             @Override
-                            public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-                                // 读取发送的信息
-                                System.out.println(msg);
+                            protected void initChannel(NioSocketChannel nioSocketChannel) throws Exception {
+                                // 添加具体的handler
+                                nioSocketChannel.pipeline().addLast(new StringDecoder()); //将bytebuf转换成字符串
+                                nioSocketChannel.pipeline().addLast(new ChannelInboundHandlerAdapter() {
+                                    // 读事件
+                                    @Override
+                                    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+                                        // 读取发送的信息
+                                        System.out.println(msg);
+                                    }
+                                });
                             }
-                        });
-                    }
-                }).bind(8100); //设置访问服务器的端口号
+                        }).bind(8100); //设置访问服务器的端口号
     }
 }

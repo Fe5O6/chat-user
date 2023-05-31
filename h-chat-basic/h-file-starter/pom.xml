@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>com.h</groupId>
-        <artifactId>h-chat-service</artifactId>
+        <artifactId>h-chat-basic</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>h-chat-admin</artifactId>
+    <groupId>com.h.file</groupId>
+    <artifactId>h-file-starter</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -19,35 +19,28 @@
     </properties>
 
     <dependencies>
-        <!-- 引入依赖模块 -->
-        <dependency>
-            <groupId>com.h</groupId>
-            <artifactId>h-chat-model</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.h</groupId>
-            <artifactId>h-chat-common</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.h.file</groupId>
-            <artifactId>h-file-starter</artifactId>
-        </dependency>
-
-        <!-- Spring boot starter -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <groupId>io.minio</groupId>
+            <artifactId>minio</artifactId>
+            <version>7.1.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

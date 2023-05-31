@@ -10,6 +10,10 @@
     </parent>
 
     <artifactId>h-chat-basic</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>h-file-starter</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
