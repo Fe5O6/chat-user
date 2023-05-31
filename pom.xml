@@ -20,6 +20,13 @@
         <module>h-chat-getway-api</module>
     </modules>
 
+    <!-- 继承Spring boot工程 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.9.RELEASE</version>
+    </parent>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -52,7 +59,7 @@
         <knife4j.version>2.0.2</knife4j.version>
         <com.alibaba.cloud>2.2.5.RELEASE</com.alibaba.cloud>
         <xxl.job.version>2.3.0-SNAPSHOT</xxl.job.version>
-        <netty.all.version>4.1.86.Final</netty.all.version>
+        <netty.all.version>4.1.59.Final</netty.all.version>
     </properties>
 
     <dependencies>
