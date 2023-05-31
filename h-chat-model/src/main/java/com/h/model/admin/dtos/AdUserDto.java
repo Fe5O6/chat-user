@@ -1,4 +1,4 @@
-package com.h.admin.dtos;
+package com.h.model.admin.dtos;
 
 import lombok.Data;
 
