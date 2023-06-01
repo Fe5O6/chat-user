@@ -24,6 +24,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.mybatis</groupId>
@@ -62,10 +63,12 @@
             <version>2.11.4</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency>
+        <!--MongoDB的-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-data-mongodb</artifactId>-->
+<!--        </dependency>-->
+
 <!--        <dependency>-->
 <!--            <groupId>cn.afterturn</groupId>-->
 <!--            <artifactId>easypoi-spring-boot-starter</artifactId>-->
