@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import javax.validation.Valid;
 
 /**
  * @author: domainDrivenDesign
@@ -22,7 +21,7 @@ public class LoginController {
     private ApUserService apUserService;
 
     @PostMapping("/in")
-    public ResponseResult login(@Valid @RequestBody ApUserDto apUserDto){
+    public ResponseResult login(@RequestBody ApUserDto apUserDto){
         return apUserService.login(apUserDto);
     }
 }

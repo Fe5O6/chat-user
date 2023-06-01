@@ -9,8 +9,8 @@ public class AdminThreadLocalUtil {
     private static final ThreadLocal<ApUser> WM_USER_THREAD_LOCAL = new ThreadLocal<>();
 
     //存数据
-    public static void setUser(ApUser adUser){
-        WM_USER_THREAD_LOCAL.set(adUser);
+    public static void setUser(ApUser apUser){
+        WM_USER_THREAD_LOCAL.set(apUser);
     }
 
     //获取数据
