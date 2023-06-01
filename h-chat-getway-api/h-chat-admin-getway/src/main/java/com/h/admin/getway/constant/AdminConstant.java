@@ -1,4 +1,4 @@
-package com.h.model.common.constant;
+package com.h.admin.getway.constant;
 
 /**
  * @author: domainDrivenDesign

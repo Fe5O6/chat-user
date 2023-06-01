@@ -1,7 +1,7 @@
 package com.h.uils.thread;
 
-import com.heima.model.admin.pojos.AdUser;
 
+import com.h.model.admin.pojos.AdUser;
 
 public class AdminThreadLocalUtil {
 

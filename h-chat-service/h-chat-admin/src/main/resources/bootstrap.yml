@@ -11,24 +11,8 @@ spring:
       config:
         server-addr: 192.168.200.130:8848
         file-extension: yml
-  # redis地址
-  redis:
-    host: 192.168.200.130
-    port: 6379
-    password: 123456
-
-#feign:
-#  hystrix:
-#    enabled: false
-#  httpclient:
-#    enabled: true  #开启feign对httpClient的支持
-#    max-connections: 200   #最大的连接数
-#    max-connections-per-route: 50   #每个路径的最大连接数
 
 
-#minio:
-#  accessKey: minio
-#  secretKey: minio123
-#  bucket: leadnews
-#  endpoint: http://192.168.200.130:9000
-#  readPath: http://192.168.200.130:9000
+
+
+

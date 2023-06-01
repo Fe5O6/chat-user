@@ -1,8 +1,10 @@
 package com.h.admin.getway.filter;
 
 
-import com.h.admin.getway.util.AppJwtUtil;
-import com.h.model.common.constant.AdminConstant;
+
+import com.h.admin.getway.constant.AdminConstant;
+import com.h.admin.getway.utils.AppJwtUtil;
+
 import io.jsonwebtoken.Claims;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;

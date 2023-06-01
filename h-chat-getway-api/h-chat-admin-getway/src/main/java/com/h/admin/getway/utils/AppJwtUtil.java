@@ -1,4 +1,4 @@
-package com.h.admin.getway.util;
+package com.h.admin.getway.utils;
 
 import io.jsonwebtoken.*;
 
@@ -9,7 +9,7 @@ import java.util.*;
 public class AppJwtUtil {
 
     // TOKEN的有效期一天（S）
-    private static final int TOKEN_TIME_OUT = 3_600;
+    private static final int TOKEN_TIME_OUT = 3600;
     // 加密KEY
     private static final String TOKEN_ENCRY_KEY = "MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjYyN2I0ZjY";
     // 最小刷新间隔(S)
@@ -105,6 +105,18 @@ public class AppJwtUtil {
         SecretKey key = new SecretKeySpec(encodedKey, 0, encodedKey.length, "AES");
         return key;
     }
+
+    /**
+     * 自定义字符串生成加密key
+     * @param tokenEncryKey 自定义加密KEY
+     * @return
+     */
+    public static SecretKey generalKey(String tokenEncryKey) {
+        byte[] encodedKey = Base64.getEncoder().encode(tokenEncryKey.getBytes());
+        SecretKey key = new SecretKeySpec(encodedKey, 0, encodedKey.length, "AES");
+        return key;
+    }
+
 
 
 }
