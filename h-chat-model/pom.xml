@@ -26,6 +26,7 @@
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
+
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
@@ -85,6 +86,7 @@
             <artifactId>commons-compress</artifactId>
             <version>1.20</version>
         </dependency>
+
     </dependencies>
 
 </project>

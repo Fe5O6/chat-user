@@ -126,6 +126,11 @@
                 </exclusions>
                 <version>${spring.boot.version}</version>
             </dependency>
+            <!--空判断启动类-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-validation</artifactId>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter</artifactId>

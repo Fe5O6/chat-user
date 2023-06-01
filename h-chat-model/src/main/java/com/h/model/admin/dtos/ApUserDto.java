@@ -6,11 +6,12 @@ import lombok.Data;
  * 管理员用户信息dto
  */
 @Data
-public class AdUserDto {
+public class ApUserDto {
 
     /**
      * 用户名
      */
+
     private String name;
 
     /**
