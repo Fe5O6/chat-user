@@ -18,6 +18,7 @@
         <module>h-chat-common</module>
         <module>h-chat-basic</module>
         <module>h-chat-getway-api</module>
+        <module>h-chat-feign-api</module>
     </modules>
 
     <!-- 继承Spring boot工程 -->

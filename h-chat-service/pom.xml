@@ -33,6 +33,10 @@
             <groupId>com.h</groupId>
             <artifactId>h-chat-common</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.h</groupId>
+            <artifactId>h-chat-feign-api</artifactId>
+        </dependency>
 
         <!-- Spring boot starter -->
         <dependency>
@@ -53,8 +57,6 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
-
-
 
     </dependencies>
 

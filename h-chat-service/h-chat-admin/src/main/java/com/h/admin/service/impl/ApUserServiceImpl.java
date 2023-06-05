@@ -76,6 +76,5 @@ public class ApUserServiceImpl extends ServiceImpl<ApUserMapper, ApUser> impleme
 
         //返回
         return ResponseResult.okResult(user);
-
     }
 }

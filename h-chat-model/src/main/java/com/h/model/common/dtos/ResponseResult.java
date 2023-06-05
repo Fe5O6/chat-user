@@ -1,12 +1,8 @@
 package com.h.model.common.dtos;
 
-import com.alibaba.fastjson.JSON;
 import com.h.model.common.enums.AppHttpCodeEnum;
 
-
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 通用的结果返回类

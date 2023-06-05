@@ -3,14 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>com.h</groupId>
-        <artifactId>h-chat-service</artifactId>
+        <artifactId>hChart</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>h-chat-admin</artifactId>
+    <artifactId>h-chat-feign-api</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -19,25 +18,18 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.h</groupId>
+            <artifactId>h-chat-model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.h</groupId>
+            <artifactId>h-chat-common</artifactId>
+        </dependency>
 
         <dependency>
-            <groupId>com.h.file</groupId>
-            <artifactId>h-file-starter</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <!-- easy Excel -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>easyexcel</artifactId>
-            <version>2.2.6</version>
-        </dependency>
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
     </dependencies>
 

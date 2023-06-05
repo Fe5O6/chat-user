@@ -19,7 +19,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @SpringBootApplication
 @EnableDiscoveryClient
 @MapperScan("com.h.admin.mapper")
-//@EnableAspectJAutoProxy //开启注解aop
+@EnableAspectJAutoProxy //开启注解aop
 public class AdminApplication {
     public static void main(String[] args) {
         SpringApplication.run(AdminApplication.class,args);

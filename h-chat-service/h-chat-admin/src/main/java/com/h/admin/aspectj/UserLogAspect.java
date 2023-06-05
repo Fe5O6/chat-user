@@ -3,10 +3,10 @@
 //import com.alibaba.fastjson.JSON;
 //
 //import com.h.admin.annotation.UserLog;
-//import com.h.admin.pojos.AdUser;
+//import com.h.admin.mapper.ApUserMapper;
+//import com.h.uils.thread.AdminThreadLocalUtil;
 //import lombok.extern.slf4j.Slf4j;
 //import org.apache.commons.lang3.StringUtils;
-//
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.stereotype.Component;
 //
@@ -23,7 +23,7 @@
 //public class UserLogAspect {
 //
 //    @Autowired
-//    private AdUserMapper adUserMapper;
+//    private ApUserMapper apUserMapper;
 //
 //    @Autowired
 //    private AdUserLogMapper adUserLogMapper;
@@ -71,7 +71,7 @@
 //            AdUserLog adUserLog = new AdUserLog();
 //
 //            //获取当前用户
-//            AdUser adUser = adUserMapper.selectById(AdminThreadLocalUtil.getUser().getId());
+//            AdUser adUser = apUserMapper.selectById(AdminThreadLocalUtil.getUser().getId());
 //            if (adUser != null) {
 //                adUserLog.setUsername(adUser.getName());
 //            }
